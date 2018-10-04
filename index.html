@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>impress.js </title>
+        <style>
+            .slide {
+                display: block;
+                width: 1000px;
+                height: 700px;
+                border-left:25px solid #eee;
+                color:#000;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="impress">
+            <div id="intro" class="step slide" data-x="-1000" data-y="-1000" data-scale="3">
+               <div>
+                   <h2 class="title1">Building Impressive Presentations</h2>
+                    <h3 class="title1">with</h3>
+                    <h3 class="title2">Impress.js</h3>
+               </div>
+            </div>
+            <div id="guidelines" class="step slide" data-x="-1000" data-y="-2500">
+                <div class="round"><p>Step 1</p></div>
+            </div>
+            <div id="graphic" class="step slide" data-x="1000" data-y="-1500" data-rotate="90">
+                <div class="round">Step 2</div>
+            </div>
+        </div>
+        <script src="js/impress.js"></script>
+        <script>
+            impress().init();
+        </script>
+  </body>
+</html>
